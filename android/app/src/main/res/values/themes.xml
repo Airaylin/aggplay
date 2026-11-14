@@ -3,7 +3,7 @@
         <item name="android:windowBackground">#101418</item>
         <item name="android:statusBarColor">#101418</item>
     </style>
-    <style name="Theme.AggPlay.Dialog" parent="Theme.AppCompat.Dialog.NoActionBar">
+    <style name="Theme.AggPlay.Dialog" parent="Theme.AppCompat.DayNight.Dialog.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
