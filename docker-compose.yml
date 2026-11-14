@@ -1,0 +1,9 @@
+services:
+  aggplay:
+    build: .
+    container_name: aggplay
+    ports:
+      - "8094:8094"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
