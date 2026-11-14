@@ -1,6 +1,7 @@
 package com.river.aggplay
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.ViewGroup
@@ -9,14 +10,13 @@ import android.webkit.WebViewClient
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 
 /**
  * 主界面 = 服务器管理页(WebView) + 顶部一键开播。
- * 首次启动填服务器地址和访问口令；勾选「打开自动开播」后，
+ * 首次启动填服务器地址和访问口令；「打开自动开播」后，
  * 手机小爱同学自定义指令「打开聚合待听」即可让音箱直接开播（免架桥语音触发）。
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private lateinit var web: WebView
 

@@ -3,10 +3,10 @@ package com.river.aggplay
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity as AppBase
 
 /** 分享接收：B站/网易云等 App 点「分享 → 聚合待听」即投递到服务器队列。 */
-class ShareActivity : AppCompatActivity() {
+class ShareActivity : AppBase() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val text = when (intent?.action) {

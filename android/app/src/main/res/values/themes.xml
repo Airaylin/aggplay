@@ -1,9 +1,9 @@
 <resources>
-    <style name="Theme.AggPlay" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.AggPlay" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:windowBackground">#101418</item>
         <item name="android:statusBarColor">#101418</item>
     </style>
-    <style name="Theme.AggPlay.Dialog" parent="Theme.AppCompat.Light.Dialog.NoActionBar">
+    <style name="Theme.AggPlay.Dialog" parent="@android:style/Theme.Material.Dialog.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>

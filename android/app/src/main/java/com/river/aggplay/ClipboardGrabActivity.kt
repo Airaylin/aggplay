@@ -3,13 +3,13 @@ package com.river.aggplay
 import android.content.ClipboardManager
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity as AppBase
 
 /**
  * 剪贴板快投：快捷磁贴点击 → 拉起本透明页（短暂获得焦点，Android 10+ 合法读剪贴板）
  * → 读到内容立即 POST /api/add → finish。
  */
-class ClipboardGrabActivity : AppCompatActivity() {
+class ClipboardGrabActivity : AppBase() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (!Api.configured(this)) {
